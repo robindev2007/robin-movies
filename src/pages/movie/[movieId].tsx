@@ -8,6 +8,7 @@ import { moviesAPI } from '@/movies/moviesAPI';
 import { apiConfigurationAPI } from '@/api-configuration/apiConfigurationAPI';
 import { ParsedUrlQuery } from 'querystring';
 import { GetServerSideProps } from 'next';
+import MovieVideoPlayer from '@/common/MovieVideoPlayer';
 
 function getMovieId(query: ParsedUrlQuery) {
   return Number(query.movieId);
@@ -38,6 +39,9 @@ function MovieProfilePage() {
           }}
         />
       )}
+
+      <MovieVideoPlayer movieId={`${movieId}`} />
+
       <MovieProfile movie={data} loading={isLoading} />
     </>
   );
