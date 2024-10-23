@@ -16,7 +16,6 @@ import { useQuery } from '@tanstack/react-query';
 import AppTitle from './AppTitle';
 import { moviesAPI } from '@/movies/moviesAPI';
 import { useRouter } from 'next/router';
-import TmdbAttribution from './TmdbAttribution';
 import LoadingIndicator from '@/common/LoadingIndicator';
 
 export const APP_DRAWER_WIDTH = 260;
@@ -88,7 +87,6 @@ function AppDrawer() {
           </List>
         </LoadingIndicator>
       </Box>
-      <TmdbAttribution />
     </>
   );
 

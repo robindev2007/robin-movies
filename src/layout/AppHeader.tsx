@@ -87,7 +87,7 @@ const AppHeader = forwardRef<HTMLDivElement>(function AppHeader(props, ref) {
               </IconButton>
               <IconButton
                 aria-label="Toggle theme"
-                href="https://github.com/waqarahmad134/tmdb-explorer"
+                href="https://github.com/robindev2007/robin-movies"
                 LinkComponent={ExternalLink}
               >
                 <GitHubIcon />

@@ -6,7 +6,7 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
 
 const getDefaultSeoConfig = (pathname: string): DefaultSeoProps => {
   const url = `${baseUrl}${pathname}`;
-  const description = `${APP_TITLE} is a client application for TMDb API. It's created with Next.js.`;
+  const description = `${APP_TITLE} is a Movie streming website created by Robin.`;
   return {
     titleTemplate: `%s | ${APP_TITLE}`,
     description,
